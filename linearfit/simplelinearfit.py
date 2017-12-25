@@ -91,7 +91,7 @@ data = np.vstack((X,Y)).transpose()
 # now we basically assume (by default) that our data could be represented
 # by y_i = a_0 + a_1*g_1(x_i) + ... + a_dim*g_dim(x_i) and solve_for_coeff
 # computes the coefficients {a_j}_j=0,...,dim such that the differences
-# |y_i - (a_0 + a_1*g_1(x_i) + ... + a_dim*g_dim(x_i))|² 
+# |y_i - (a_0 + a_1*g_1(x_i) + ... + a_dim*g_dim(x_i))|² are minimized
 a = solve_for_coeff(data,dim1)
 M = generate_Fit_Matrix(data,dim1)
 b = M.dot(a)
