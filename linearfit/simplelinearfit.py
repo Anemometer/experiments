@@ -10,6 +10,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
+
 """ 
 Generates the linear fit matrix M defined as M[i,(j,l)] = g_j(x_i,l),
 i = 1,...n is the number of data points
